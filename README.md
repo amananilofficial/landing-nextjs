@@ -219,10 +219,6 @@ The project includes GitHub Actions workflows for:
 - Production deployment on main branch
 - Security scanning and dependency updates
 
-## 👨‍💻 Authors
-
-- **Aman Anil** - *Initial work* - [amananilofficial](https://github.com/amananilofficial)
-
 ## 🙏 Acknowledgments
 
 - Thanks to the open-source community for the amazing tools and libraries
@@ -239,30 +235,6 @@ The project includes GitHub Actions workflows for:
 - Accessibility improvements
 
 ---
-
-**Made with ❤️ by [Aman Anil]**
-   ```bash
-   npm run build
-   netlify deploy --prod --dir=.next
-   ```
-
-3. **GitHub Pages**
-   ```bash
-   npm run deploy
-   ```
-
-4. **AWS S3 + CloudFront**
-   ```bash
-   aws s3 sync dist/ s3://your-bucket-name
-   ```
-
-### CI/CD Pipeline
-
-The project includes GitHub Actions workflows for:
-- Automated testing on pull requests
-- Production deployment on main branch
-- Security scanning and dependency updates
-
 ## 👨‍💻 Authors
 
 - **Aman Anil** - *Initial work* - [amananilofficial](https://github.com/amananilofficial)
