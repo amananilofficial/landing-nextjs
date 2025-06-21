@@ -6,7 +6,7 @@ A comprehensive collection of modern, responsive landing page templates built wi
 
 ## 🚀 Features
 
-- **Multiple Templates**: 8+ professionally designed landing page templates
+- **Multiple Templates**: 10 professionally designed landing page templates (1 active, 9 planned)
 - **Server-Side Rendering**: Fast initial page loads with Next.js 15 SSR/SSG
 - **Responsive Design**: Fully responsive layouts that work seamlessly across all devices
 - **Smooth Animations**: Beautiful animations and transitions powered by Framer Motion
@@ -28,36 +28,18 @@ A comprehensive collection of modern, responsive landing page templates built wi
 - **React Three Fiber**: 3D graphics and WebGL capabilities
 - **Three.js**: 3D library for enhanced visual experiences
 
-## � Project Structure
-
-```
-landing-nextjs/
-├── src/
-│   └── app/
-│       ├── components/
-│       │   ├── Home.tsx                 # Main landing page collection
-│       │   ├── SaaSLandingPage.tsx     # SaaS product landing page
-│       │   └── EcommerceLandingPage.tsx # E-commerce store landing page
-│       ├── globals.css                  # Global styles
-│       ├── layout.tsx                   # Root layout component
-│       └── page.tsx                     # Home page entry point
-├── package.json                         # Dependencies and scripts
-├── next.config.js                       # Next.js configuration
-├── tailwind.config.js                   # Tailwind CSS configuration
-└── tsconfig.json                        # TypeScript configuration
-```
-
 ## 🎨 Available Templates
 
-1. **Home Collection Page** - Main page showcasing all available templates
-2. **SaaS Product Landing** - Modern SaaS product landing page with pricing
-3. **E-commerce Store** - Product showcase with shopping cart functionality
-4. **Portfolio Website** - Creative portfolio for designers/developers
-5. **Mobile App Landing** - App store ready landing page
-6. **Agency Website** - Professional agency with team/services
-7. **Event Landing** - Event registration and information page
-8. **Sustainable Farming** - Eco-friendly farming consultation page
-9. **Vintage Clothing** - Retro clothing collection showcase
+1. **Home Collection Page** - Main page showcasing all available templates with category filtering
+2. **SaaS Product Landing** - Modern SaaS product landing page (planned)
+3. **E-commerce Store** - Product showcase with shopping cart functionality (planned)
+4. **Portfolio Website** - Creative portfolio for designers/developers (planned)
+5. **Mobile App Landing** - App store ready landing page (planned)
+6. **Agency Website** - Professional agency with team/services (planned)
+7. **Event Landing** - Event registration and information page (planned)
+8. **Sustainable Farming** - Eco-friendly farming consultation page (planned)
+9. **Vintage Clothing** - Retro clothing collection showcase (planned)
+10. **Streaming Hub** - Movies, series, and live TV streaming service (planned)
 
 ## �🚦 Getting Started
 
@@ -66,7 +48,7 @@ landing-nextjs/
 Before running this project, make sure you have the following installed:
 
 - [Node.js](https://nodejs.org/) (v18.0.0 or higher)
-- [npm](https://www.npmjs.com/) or [yarn](https://yarnpkg.com/)
+- [npm](https://www.npmjs.com/)
 
 ### Installation
 
@@ -111,7 +93,7 @@ npm start
 
 1. Create a new component in `src/app/components/`
 2. Add the template to the `landingPages` array in `Home.tsx`
-3. Create a new route file in the app directory
+3. Create a new route file in the app directory for the new template
 
 ### Framer Motion Animations
 
@@ -123,10 +105,9 @@ Animation configurations can be found in the component files. The project uses:
 
 ### Layout and Components
 
-- **Home**: Main collection page with filtering
-- **SaaS Landing**: Full-featured SaaS product page
-- **E-commerce Landing**: Product showcase with cart functionality
-- **Navigation**: Responsive navigation with mobile menu
+- **Home**: Main collection page with filtering and category navigation
+- **Template Components**: Individual landing page templates (planned)
+- **Navigation**: Responsive navigation with mobile menu (planned)
 - **Animations**: Framer Motion integration throughout
 
 ## 📱 Responsive Breakpoints
@@ -186,23 +167,7 @@ The build process can be customized through:
 - `package.json` - npm scripts and dependencies
 - `tailwind.config.js` - Tailwind CSS configuration
 
-## 📖 Documentation
-
-### API Documentation
-
-If your landing page integrates with APIs, document them here:
-
-- **Contact Form API**: POST `/api/contact`
-- **Newsletter Signup**: POST `/api/newsletter`
-- **Analytics Events**: POST `/api/analytics`
-
-### Component Documentation
-
-Each component includes inline documentation and usage examples.
-
-## 🐛 Troubleshooting
-
-### Common Issues
+## 📖Common Issues
 
 **Issue**: Development server won't start
 **Solution**: Check if port 3000 is available or specify a different port
@@ -301,21 +266,3 @@ The project includes GitHub Actions workflows for:
 ## 👨‍💻 Authors
 
 - **Aman Anil** - *Initial work* - [amananilofficial](https://github.com/amananilofficial)
-
-## 🙏 Acknowledgments
-
-- Thanks to the open-source community for the amazing tools and libraries
-- Design inspiration from [Design Source]
-- Special thanks to contributors and testers
-
-## 🔄 Changelog
-
-### Version 1.0.0 (Latest)
-- Initial release with core features
-- Responsive design implementation
-- Performance optimizations
-- Accessibility improvements
-
----
-
-**Made with ❤️ by [Aman Anil]**

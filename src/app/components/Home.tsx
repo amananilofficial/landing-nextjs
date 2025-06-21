@@ -88,6 +88,16 @@ export default function Home() {
       category: 'Clothing',
       isActive: true,
     },
+    {
+      id: '9',
+      title: 'Streaming Hub',
+      description: 'Landing page for movies, series, and live TV streaming service',
+      slug: 'streaming-hub',
+      url: '/streaming-hub',
+      category: 'Streaming',
+      isActive: true,
+    }
+
   ]);
 
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
