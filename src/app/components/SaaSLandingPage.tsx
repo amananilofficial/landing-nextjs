@@ -214,10 +214,8 @@ const SaaSLandingPage = () => {
                         </div>
                     </motion.div>
                 )}
-            </nav>
-
-            {/* Hero Section */}
-            <section className="pt-20 pb-20 px-4 sm:px-6 lg:px-8">
+            </nav>            {/* Hero Section */}
+            <section className="pt-20 pb-12 sm:pb-20 px-4 sm:px-6 lg:px-8">
                 <div className="max-w-7xl mx-auto">
                     <motion.div
                         className="text-center max-w-4xl mx-auto"
@@ -226,7 +224,7 @@ const SaaSLandingPage = () => {
                         transition={{ duration: 0.8 }}
                     >
                         <motion.h1
-                            className="text-5xl md:text-7xl font-bold text-gray-900 mb-6 leading-tight"
+                            className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight px-2"
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
@@ -238,7 +236,7 @@ const SaaSLandingPage = () => {
                         </motion.h1>
 
                         <motion.p
-                            className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto"
+                            className="text-base sm:text-lg md:text-xl lg:text-2xl text-gray-600 mb-6 sm:mb-8 max-w-3xl mx-auto px-2"
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.4 }}
@@ -247,22 +245,22 @@ const SaaSLandingPage = () => {
                         </motion.p>
 
                         <motion.div
-                            className="flex flex-col sm:flex-row gap-4 justify-center items-center"
+                            className="flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center items-center px-4"
                             initial={{ opacity: 0, y: 30 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.6 }}
                         >
                             <motion.button
-                                className="px-8 py-4 bg-blue-600 text-white text-lg font-semibold rounded-xl hover:bg-blue-700 transition-all flex items-center gap-2"
+                                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 text-white text-base sm:text-lg font-semibold rounded-xl hover:bg-blue-700 transition-all flex items-center justify-center gap-2"
                                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(59, 130, 246, 0.3)" }}
                                 whileTap={{ scale: 0.95 }}
                             >
                                 Start Free Trial
-                                <ArrowRight className="w-5 h-5" />
+                                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
                             </motion.button>
 
                             <motion.button
-                                className="px-8 py-4 border-2 border-gray-300 text-gray-700 text-lg font-semibold rounded-xl hover:border-blue-600 hover:text-blue-600 transition-all"
+                                className="w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 border-2 border-gray-300 text-gray-700 text-base sm:text-lg font-semibold rounded-xl hover:border-blue-600 hover:text-blue-600 transition-all"
                                 whileHover={{ scale: 1.05 }}
                                 whileTap={{ scale: 0.95 }}
                             >
@@ -271,62 +269,59 @@ const SaaSLandingPage = () => {
                         </motion.div>
 
                         <motion.div
-                            className="mt-12 text-sm text-gray-500"
+                            className="mt-8 sm:mt-12 text-xs sm:text-sm text-gray-500 px-4"
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
                             transition={{ duration: 0.8, delay: 0.8 }}
                         >
                             No credit card required • 14-day free trial • Cancel anytime
                         </motion.div>
-                    </motion.div>
-                    {/* Hero Image/Dashboard Mockup */}
+                    </motion.div>                    {/* Hero Image/Dashboard Mockup */}
                     <motion.div
-                        className="mt-20 relative"
+                        className="mt-12 sm:mt-16 lg:mt-20 relative px-2 sm:px-0"
                         initial={{ opacity: 0, y: 50 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 1 }}
                     >
-                        <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl shadow-2xl p-1">
-                            <div className="bg-white rounded-xl p-8">
-                                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                                    <div className="space-y-4">
-                                        <div className="h-4 bg-gray-200 rounded animate-pulse"></div>
-                                        <div className="h-24 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg"></div>
-                                        <div className="h-4 bg-gray-200 rounded animate-pulse w-3/4"></div>
+                        <div className="bg-gradient-to-r from-blue-500 to-purple-600 rounded-xl sm:rounded-2xl shadow-2xl p-1">
+                            <div className="bg-white rounded-lg sm:rounded-xl p-4 sm:p-6 lg:p-8">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+                                    <div className="space-y-3 sm:space-y-4">
+                                        <div className="h-3 sm:h-4 bg-gray-200 rounded animate-pulse"></div>
+                                        <div className="h-20 sm:h-24 bg-gradient-to-br from-blue-100 to-blue-200 rounded-lg"></div>
+                                        <div className="h-3 sm:h-4 bg-gray-200 rounded animate-pulse w-3/4"></div>
                                     </div>
-                                    <div className="space-y-4">
-                                        <div className="h-4 bg-gray-200 rounded animate-pulse w-1/2"></div>
-                                        <div className="h-32 bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg"></div>
+                                    <div className="space-y-3 sm:space-y-4">
+                                        <div className="h-3 sm:h-4 bg-gray-200 rounded animate-pulse w-1/2"></div>
+                                        <div className="h-24 sm:h-32 bg-gradient-to-br from-purple-100 to-purple-200 rounded-lg"></div>
                                     </div>
-                                    <div className="space-y-4">
-                                        <div className="h-4 bg-gray-200 rounded animate-pulse"></div>
-                                        <div className="h-20 bg-gradient-to-br from-green-100 to-green-200 rounded-lg"></div>
-                                        <div className="h-4 bg-gray-200 rounded animate-pulse w-2/3"></div>
+                                    <div className="space-y-3 sm:space-y-4 sm:col-span-2 lg:col-span-1">
+                                        <div className="h-3 sm:h-4 bg-gray-200 rounded animate-pulse"></div>
+                                        <div className="h-16 sm:h-20 bg-gradient-to-br from-green-100 to-green-200 rounded-lg"></div>
+                                        <div className="h-3 sm:h-4 bg-gray-200 rounded animate-pulse w-2/3"></div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </motion.div>
                 </div>
-            </section>
-
-            {/* Features Section */}
-            <section id="features" className="py-20 bg-white">
+            </section>            {/* Features Section */}
+            <section id="features" className="py-12 sm:py-16 lg:py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <motion.div
-                        className="text-center mb-16"
+                        className="text-center mb-12 sm:mb-16"
                         {...fadeInUp}
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                             Powerful Features
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                        <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
                             Everything you need to build, scale, and optimize your business in one powerful platform.
                         </p>
                     </motion.div>
 
                     <motion.div
-                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+                        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
                         variants={staggerContainer}
                         initial="initial"
                         whileInView="animate"
@@ -335,42 +330,40 @@ const SaaSLandingPage = () => {
                         {features.map((feature, index) => (
                             <motion.div
                                 key={index}
-                                className="p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-300 group hover:border-blue-200"
+                                className="p-6 sm:p-8 rounded-2xl border border-gray-200 hover:shadow-xl transition-all duration-300 group hover:border-blue-200"
                                 variants={fadeInUp}
                                 whileHover={{ y: -5 }}
                             >
                                 <div className="text-blue-600 mb-4 group-hover:scale-110 transition-transform">
                                     {feature.icon}
                                 </div>
-                                <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                                <h3 className="text-lg sm:text-xl font-semibold text-gray-900 mb-2">
                                     {feature.title}
                                 </h3>
-                                <p className="text-gray-600">
+                                <p className="text-gray-600 text-sm sm:text-base">
                                     {feature.description}
                                 </p>
                             </motion.div>
                         ))}
                     </motion.div>
                 </div>
-            </section>
-
-            {/* Testimonials Section */}
-            <section className="py-20 bg-gradient-to-r from-blue-50 to-purple-50">
+            </section>            {/* Testimonials Section */}
+            <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-blue-50 to-purple-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <motion.div
-                        className="text-center mb-16"
+                        className="text-center mb-12 sm:mb-16"
                         {...fadeInUp}
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                             Loved by Thousands
                         </h2>
-                        <p className="text-xl text-gray-600">
+                        <p className="text-lg sm:text-xl text-gray-600 px-4">
                             See what our customers are saying about us
                         </p>
                     </motion.div>
 
                     <motion.div
-                        className="grid grid-cols-1 md:grid-cols-3 gap-8"
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8"
                         variants={staggerContainer}
                         initial="initial"
                         whileInView="animate"
@@ -379,7 +372,7 @@ const SaaSLandingPage = () => {
                         {testimonials.map((testimonial, index) => (
                             <motion.div
                                 key={index}
-                                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+                                className="bg-white p-6 sm:p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
                                 variants={fadeInUp}
                             >
                                 <div className="flex mb-4">
@@ -387,36 +380,34 @@ const SaaSLandingPage = () => {
                                         <Star key={i} className="w-5 h-5 text-yellow-400 fill-current" />
                                     ))}
                                 </div>
-                                <p className="text-gray-600 mb-6 italic">
+                                <p className="text-gray-600 mb-6 italic text-sm sm:text-base">
                                     "{testimonial.content}"
                                 </p>
                                 <div>
-                                    <div className="font-semibold text-gray-900">{testimonial.name}</div>
-                                    <div className="text-sm text-gray-500">{testimonial.role}</div>
+                                    <div className="font-semibold text-gray-900 text-sm sm:text-base">{testimonial.name}</div>
+                                    <div className="text-xs sm:text-sm text-gray-500">{testimonial.role}</div>
                                 </div>
                             </motion.div>
                         ))}
                     </motion.div>
                 </div>
-            </section>
-
-            {/* Pricing Section */}
-            <section id="pricing" className="py-20 bg-white">
+            </section>            {/* Pricing Section */}
+            <section id="pricing" className="py-12 sm:py-16 lg:py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <motion.div
-                        className="text-center mb-16"
+                        className="text-center mb-12 sm:mb-16"
                         {...fadeInUp}
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                             Simple, Transparent Pricing
                         </h2>
-                        <p className="text-xl text-gray-600">
+                        <p className="text-lg sm:text-xl text-gray-600 px-4">
                             Choose the perfect plan for your team
                         </p>
                     </motion.div>
 
                     <motion.div
-                        className="grid grid-cols-1 md:grid-cols-3 gap-8"
+                        className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8"
                         variants={staggerContainer}
                         initial="initial"
                         whileInView="animate"
@@ -425,41 +416,41 @@ const SaaSLandingPage = () => {
                         {pricingPlans.map((plan, index) => (
                             <motion.div
                                 key={index}
-                                className={`relative p-8 rounded-2xl border-2 transition-all duration-300 ${plan.popular
-                                    ? 'border-blue-500 shadow-xl scale-105'
+                                className={`relative p-6 sm:p-8 rounded-2xl border-2 transition-all duration-300 ${plan.popular
+                                    ? 'border-blue-500 shadow-xl md:scale-105'
                                     : 'border-gray-200 hover:border-blue-300 hover:shadow-lg'
                                     }`}
                                 variants={fadeInUp}
                                 whileHover={{ y: -5 }}
                             >
                                 {plan.popular && (
-                                    <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
-                                        <span className="bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold">
+                                    <div className="absolute -top-3 sm:-top-4 left-1/2 transform -translate-x-1/2">
+                                        <span className="bg-blue-500 text-white px-3 sm:px-4 py-1 sm:py-2 rounded-full text-xs sm:text-sm font-semibold">
                                             Most Popular
                                         </span>
                                     </div>
                                 )}
 
-                                <div className="text-center mb-8">
-                                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
+                                <div className="text-center mb-6 sm:mb-8">
+                                    <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2">{plan.name}</h3>
                                     <div className="mb-4">
-                                        <span className="text-4xl font-bold text-gray-900">{plan.price}</span>
-                                        <span className="text-gray-600">/{plan.period}</span>
+                                        <span className="text-3xl sm:text-4xl font-bold text-gray-900">{plan.price}</span>
+                                        <span className="text-gray-600 text-sm sm:text-base">/{plan.period}</span>
                                     </div>
-                                    <p className="text-gray-600">{plan.description}</p>
+                                    <p className="text-gray-600 text-sm sm:text-base px-2">{plan.description}</p>
                                 </div>
 
-                                <ul className="space-y-4 mb-8">
+                                <ul className="space-y-3 sm:space-y-4 mb-6 sm:mb-8">
                                     {plan.features.map((feature, featureIndex) => (
-                                        <li key={featureIndex} className="flex items-center">
-                                            <CheckCircle className="w-5 h-5 text-green-500 mr-3 flex-shrink-0" />
+                                        <li key={featureIndex} className="flex items-center text-sm sm:text-base">
+                                            <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-500 mr-2 sm:mr-3 flex-shrink-0" />
                                             <span className="text-gray-600">{feature}</span>
                                         </li>
                                     ))}
                                 </ul>
 
                                 <motion.button
-                                    className={`w-full py-3 px-6 rounded-xl font-semibold transition-all ${plan.popular
+                                    className={`w-full py-3 px-6 rounded-xl font-semibold transition-all text-sm sm:text-base ${plan.popular
                                         ? 'bg-blue-600 text-white hover:bg-blue-700'
                                         : 'bg-gray-100 text-gray-900 hover:bg-gray-200'
                                         }`}
@@ -472,54 +463,52 @@ const SaaSLandingPage = () => {
                         ))}
                     </motion.div>
                 </div>
-            </section>
-
-            {/* About Section */}
-            <section id="about" className="py-20 bg-gray-50">
+            </section>            {/* About Section */}
+            <section id="about" className="py-12 sm:py-16 lg:py-20 bg-gray-50">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <motion.div
-                        className="text-center mb-16"
+                        className="text-center mb-12 sm:mb-16"
                         {...fadeInUp}
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                             About SaaSify
                         </h2>
-                        <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+                        <p className="text-lg sm:text-xl text-gray-600 max-w-3xl mx-auto px-4">
                             We're on a mission to revolutionize how teams collaborate and build products
                         </p>
                     </motion.div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
                         <motion.div
                             initial={{ opacity: 0, x: -50 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
                         >
-                            <h3 className="text-3xl font-bold text-gray-900 mb-6">
+                            <h3 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-4 sm:mb-6">
                                 Our Story
                             </h3>
-                            <p className="text-lg text-gray-600 mb-6">
+                            <p className="text-base sm:text-lg text-gray-600 mb-4 sm:mb-6">
                                 Founded in 2020 by a team of passionate developers and entrepreneurs, SaaSify was born
                                 from the frustration of using multiple disconnected tools to manage projects and teams.
                             </p>
-                            <p className="text-lg text-gray-600 mb-6">
+                            <p className="text-base sm:text-lg text-gray-600 mb-6 sm:mb-8">
                                 We believe that powerful software should be accessible to everyone, from startups to
                                 enterprise companies. That's why we built SaaSify - to provide enterprise-grade features
                                 with the simplicity that small teams love.
                             </p>
-                            <div className="grid grid-cols-3 gap-8 mt-8">
+                            <div className="grid grid-cols-3 gap-4 sm:gap-8 mt-6 sm:mt-8">
                                 <div className="text-center">
-                                    <div className="text-3xl font-bold text-blue-600">50K+</div>
-                                    <div className="text-sm text-gray-600">Active Users</div>
+                                    <div className="text-2xl sm:text-3xl font-bold text-blue-600">50K+</div>
+                                    <div className="text-xs sm:text-sm text-gray-600">Active Users</div>
                                 </div>
                                 <div className="text-center">
-                                    <div className="text-3xl font-bold text-blue-600">99.9%</div>
-                                    <div className="text-sm text-gray-600">Uptime</div>
+                                    <div className="text-2xl sm:text-3xl font-bold text-blue-600">99.9%</div>
+                                    <div className="text-xs sm:text-sm text-gray-600">Uptime</div>
                                 </div>
                                 <div className="text-center">
-                                    <div className="text-3xl font-bold text-blue-600">4.9/5</div>
-                                    <div className="text-sm text-gray-600">Rating</div>
+                                    <div className="text-2xl sm:text-3xl font-bold text-blue-600">4.9/5</div>
+                                    <div className="text-xs sm:text-sm text-gray-600">Rating</div>
                                 </div>
                             </div>
                         </motion.div>
@@ -531,48 +520,46 @@ const SaaSLandingPage = () => {
                             viewport={{ once: true }}
                             className="relative"
                         >
-                            <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-8 text-white">
-                                <h4 className="text-2xl font-bold mb-4">Our Mission</h4>
-                                <p className="text-blue-100 mb-6">
+                            <div className="bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl p-6 sm:p-8 text-white">
+                                <h4 className="text-xl sm:text-2xl font-bold mb-4">Our Mission</h4>
+                                <p className="text-blue-100 mb-4 sm:mb-6 text-sm sm:text-base">
                                     To empower teams worldwide with tools that make collaboration seamless,
                                     insights actionable, and growth sustainable.
                                 </p>
-                                <div className="space-y-4">
+                                <div className="space-y-3 sm:space-y-4">
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle className="w-5 h-5 text-green-300" />
-                                        <span>Innovation-driven development</span>
+                                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-300 flex-shrink-0" />
+                                        <span className="text-sm sm:text-base">Innovation-driven development</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle className="w-5 h-5 text-green-300" />
-                                        <span>Customer-centric approach</span>
+                                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-300 flex-shrink-0" />
+                                        <span className="text-sm sm:text-base">Customer-centric approach</span>
                                     </div>
                                     <div className="flex items-center gap-3">
-                                        <CheckCircle className="w-5 h-5 text-green-300" />
-                                        <span>Commitment to excellence</span>
+                                        <CheckCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-300 flex-shrink-0" />
+                                        <span className="text-sm sm:text-base">Commitment to excellence</span>
                                     </div>
                                 </div>
                             </div>
                         </motion.div>
                     </div>
                 </div>
-            </section>
-
-            {/* Contact Section */}
-            <section id="contact" className="py-20 bg-white">
+            </section>            {/* Contact Section */}
+            <section id="contact" className="py-12 sm:py-16 lg:py-20 bg-white">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <motion.div
-                        className="text-center mb-16"
+                        className="text-center mb-12 sm:mb-16"
                         {...fadeInUp}
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                             Get In Touch
                         </h2>
-                        <p className="text-xl text-gray-600">
+                        <p className="text-lg sm:text-xl text-gray-600 px-4">
                             Have questions? We'd love to hear from you.
                         </p>
                     </motion.div>
 
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12">
                         {/* Contact Form */}
                         <motion.div
                             initial={{ opacity: 0, x: -50 }}
@@ -580,15 +567,15 @@ const SaaSLandingPage = () => {
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
                         >
-                            <form className="space-y-6">
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <form className="space-y-4 sm:space-y-6">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
                                     <div>
                                         <label className="block text-sm font-medium text-gray-700 mb-2">
                                             First Name
                                         </label>
                                         <input
                                             type="text"
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                                            className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm sm:text-base"
                                             placeholder="John"
                                         />
                                     </div>
@@ -598,7 +585,7 @@ const SaaSLandingPage = () => {
                                         </label>
                                         <input
                                             type="text"
-                                            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                                            className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm sm:text-base"
                                             placeholder="Doe"
                                         />
                                     </div>
@@ -609,7 +596,7 @@ const SaaSLandingPage = () => {
                                     </label>
                                     <input
                                         type="email"
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                                        className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm sm:text-base"
                                         placeholder="john@example.com"
                                     />
                                 </div>
@@ -619,7 +606,7 @@ const SaaSLandingPage = () => {
                                     </label>
                                     <input
                                         type="text"
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all"
+                                        className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all text-sm sm:text-base"
                                         placeholder="Company Name"
                                     />
                                 </div>
@@ -628,14 +615,14 @@ const SaaSLandingPage = () => {
                                         Message
                                     </label>
                                     <textarea
-                                        rows={5}
-                                        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none"
+                                        rows={4}
+                                        className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all resize-none text-sm sm:text-base"
                                         placeholder="Tell us about your project..."
                                     ></textarea>
                                 </div>
                                 <motion.button
                                     type="submit"
-                                    className="w-full px-8 py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all"
+                                    className="w-full px-6 sm:px-8 py-3 sm:py-4 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 transition-all text-sm sm:text-base"
                                     whileHover={{ scale: 1.02 }}
                                     whileTap={{ scale: 0.98 }}
                                 >
@@ -650,26 +637,26 @@ const SaaSLandingPage = () => {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
-                            className="space-y-8"
+                            className="space-y-6 sm:space-y-8"
                         >
                             <div>
-                                <h3 className="text-2xl font-bold text-gray-900 mb-6">
+                                <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">
                                     Let's Start a Conversation
                                 </h3>
-                                <p className="text-gray-600 mb-8">
+                                <p className="text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base">
                                     Whether you're looking to scale your business, need technical support,
                                     or want to explore partnership opportunities, we're here to help.
                                 </p>
                             </div>
 
-                            <div className="space-y-6">
-                                <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <Globe className="w-6 h-6 text-blue-600" />
+                            <div className="space-y-4 sm:space-y-6">
+                                <div className="flex items-start gap-3 sm:gap-4">
+                                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <Globe className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold text-gray-900 mb-1">Visit Us</h4>
-                                        <p className="text-gray-600">
+                                        <h4 className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Visit Us</h4>
+                                        <p className="text-gray-600 text-xs sm:text-sm">
                                             123 Innovation Street<br />
                                             San Francisco, CA 94105<br />
                                             United States
@@ -677,26 +664,26 @@ const SaaSLandingPage = () => {
                                     </div>
                                 </div>
 
-                                <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <Smartphone className="w-6 h-6 text-blue-600" />
+                                <div className="flex items-start gap-3 sm:gap-4">
+                                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <Smartphone className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold text-gray-900 mb-1">Call Us</h4>
-                                        <p className="text-gray-600">
+                                        <h4 className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Call Us</h4>
+                                        <p className="text-gray-600 text-xs sm:text-sm">
                                             +1 (555) 123-4567<br />
                                             Mon-Fri 9AM-6PM PST
                                         </p>
                                     </div>
                                 </div>
 
-                                <div className="flex items-start gap-4">
-                                    <div className="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
-                                        <Users className="w-6 h-6 text-blue-600" />
+                                <div className="flex items-start gap-3 sm:gap-4">
+                                    <div className="w-10 h-10 sm:w-12 sm:h-12 bg-blue-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                        <Users className="w-5 h-5 sm:w-6 sm:h-6 text-blue-600" />
                                     </div>
                                     <div>
-                                        <h4 className="font-semibold text-gray-900 mb-1">Email Us</h4>
-                                        <p className="text-gray-600">
+                                        <h4 className="font-semibold text-gray-900 mb-1 text-sm sm:text-base">Email Us</h4>
+                                        <p className="text-gray-600 text-xs sm:text-sm">
                                             hello@saasify.com<br />
                                             support@saasify.com
                                         </p>
@@ -704,18 +691,17 @@ const SaaSLandingPage = () => {
                                 </div>
                             </div>
 
-                            <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-xl">
-                                <h4 className="font-semibold text-gray-900 mb-2">Quick Response</h4>
-                                <p className="text-sm text-gray-600">
+                            <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-4 sm:p-6 rounded-xl">
+                                <h4 className="font-semibold text-gray-900 mb-2 text-sm sm:text-base">Quick Response</h4>
+                                <p className="text-xs sm:text-sm text-gray-600">
                                     We typically respond to all inquiries within 24 hours. For urgent matters,
                                     please call us directly.
                                 </p>
                             </div>
                         </motion.div>
                     </div>
-                </div>
-                {/* CTA Section */}
-                <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+                </div>                {/* CTA Section */}
+                <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-r from-blue-600 to-purple-600">
                     <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
                         <motion.div
                             initial={{ opacity: 0, y: 50 }}
@@ -723,41 +709,41 @@ const SaaSLandingPage = () => {
                             transition={{ duration: 0.8 }}
                             viewport={{ once: true }}
                         >
-                            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+                            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-4 sm:mb-6">
                                 Ready to Get Started?
                             </h2>
-                            <p className="text-xl text-blue-100 mb-8">
+                            <p className="text-lg sm:text-xl text-blue-100 mb-6 sm:mb-8 px-4">
                                 Join thousands of teams already using our platform to build better products.
                             </p>
                             <motion.button
-                                className="px-8 py-4 bg-white text-blue-600 text-lg font-semibold rounded-xl hover:bg-gray-100 transition-all inline-flex items-center gap-2"
+                                className="px-6 sm:px-8 py-3 sm:py-4 bg-white text-blue-600 text-lg font-semibold rounded-xl hover:bg-gray-100 transition-all inline-flex items-center gap-2"
                                 whileHover={{ scale: 1.05, boxShadow: "0 20px 40px rgba(255, 255, 255, 0.3)" }}
                                 whileTap={{ scale: 0.95 }}
                                 onClick={() => window.location.href = '#start'}
                             >
                                 Start Your Free Trial
-                                <ArrowRight className="w-5 h-5" />
+                                <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5" />
                             </motion.button>
                         </motion.div>
                     </div>
                 </section>
 
                 {/* Footer */}
-                <footer className="bg-gray-900 text-white py-16">
+                <footer className="bg-gray-900 text-white py-12 sm:py-16">
                     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                            <div>
-                                <div className="text-2xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8">
+                            <div className="sm:col-span-2 md:col-span-1">
+                                <div className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
                                     SaaSify
                                 </div>
-                                <p className="text-gray-400 mb-4">
+                                <p className="text-gray-400 mb-4 text-sm sm:text-base">
                                     Building the future of SaaS platforms, one feature at a time.
                                 </p>
                             </div>
 
                             <div>
-                                <h4 className="font-semibold mb-4">Product</h4>
-                                <ul className="space-y-2 text-gray-400">
+                                <h4 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Product</h4>
+                                <ul className="space-y-1 sm:space-y-2 text-gray-400 text-xs sm:text-sm">
                                     <li><a href="#" className="hover:text-white transition-colors">Features</a></li>
                                     <li><a href="#" className="hover:text-white transition-colors">Pricing</a></li>
                                     <li><a href="#" className="hover:text-white transition-colors">API</a></li>
@@ -766,8 +752,8 @@ const SaaSLandingPage = () => {
                             </div>
 
                             <div>
-                                <h4 className="font-semibold mb-4">Company</h4>
-                                <ul className="space-y-2 text-gray-400">
+                                <h4 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Company</h4>
+                                <ul className="space-y-1 sm:space-y-2 text-gray-400 text-xs sm:text-sm">
                                     <li><a href="#" className="hover:text-white transition-colors">About</a></li>
                                     <li><a href="#" className="hover:text-white transition-colors">Blog</a></li>
                                     <li><a href="#" className="hover:text-white transition-colors">Careers</a></li>
@@ -776,8 +762,8 @@ const SaaSLandingPage = () => {
                             </div>
 
                             <div>
-                                <h4 className="font-semibold mb-4">Support</h4>
-                                <ul className="space-y-2 text-gray-400">
+                                <h4 className="font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Support</h4>
+                                <ul className="space-y-1 sm:space-y-2 text-gray-400 text-xs sm:text-sm">
                                     <li><a href="#" className="hover:text-white transition-colors">Help Center</a></li>
                                     <li><a href="#" className="hover:text-white transition-colors">Community</a></li>
                                     <li><a href="#" className="hover:text-white transition-colors">Status</a></li>
@@ -786,7 +772,7 @@ const SaaSLandingPage = () => {
                             </div>
                         </div>
 
-                        <div className="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                        <div className="border-t border-gray-800 mt-8 sm:mt-12 pt-6 sm:pt-8 text-center text-gray-400 text-xs sm:text-sm">
                             <p>&copy; 2025 SaaSify. All rights reserved.</p>
                         </div>
                     </div>

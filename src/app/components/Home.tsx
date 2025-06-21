@@ -14,7 +14,8 @@ interface LandingPage {
   isActive: boolean;
 }
 
-export default function Home() {  const [landingPages] = useState<LandingPage[]>([
+export default function Home() {
+  const [landingPages] = useState<LandingPage[]>([
     {
       id: '1',
       title: 'SaaS Product Landing',
@@ -69,14 +70,32 @@ export default function Home() {  const [landingPages] = useState<LandingPage[]>
       category: 'Events',
       isActive: true,
     },
+    {
+      id: '7',
+      title: 'Sustainable Farming',
+      description: 'Eco-friendly farming practices and consultation landing page',
+      slug: 'sustainable-farm',
+      url: '/sustainable-farm',
+      category: 'Agriculture',
+      isActive: true,
+    },
+    {
+      id: '8',
+      title: 'Vintage Clothing',
+      description: 'Retro and vintage clothing collection landing page',
+      slug: 'vintage-clothes',
+      url: '/vintage-clothes',
+      category: 'Clothing',
+      isActive: true,
+    },
   ]);
 
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
-  
+
   const categories = ['All', ...Array.from(new Set(landingPages.map(page => page.category)))];
-  
-  const filteredPages = selectedCategory === 'All' 
-    ? landingPages 
+
+  const filteredPages = selectedCategory === 'All'
+    ? landingPages
     : landingPages.filter(page => page.category === selectedCategory);
 
   return (
@@ -88,7 +107,7 @@ export default function Home() {  const [landingPages] = useState<LandingPage[]>
             Landing Page Collection
           </h1>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-            Explore our curated collection of modern, responsive landing page templates. 
+            Explore our curated collection of modern, responsive landing page templates.
             Perfect for any project or business need.
           </p>
         </div>
@@ -99,11 +118,10 @@ export default function Home() {  const [landingPages] = useState<LandingPage[]>
             <button
               key={category}
               onClick={() => setSelectedCategory(category)}
-              className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${
-                selectedCategory === category
-                  ? 'bg-blue-600 text-white shadow-lg scale-105'
-                  : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-600 shadow-md hover:shadow-lg'
-              }`}
+              className={`px-6 py-2 rounded-full font-medium transition-all duration-200 ${selectedCategory === category
+                ? 'bg-blue-600 text-white shadow-lg scale-105'
+                : 'bg-white dark:bg-slate-700 text-slate-700 dark:text-slate-300 hover:bg-blue-50 dark:hover:bg-slate-600 shadow-md hover:shadow-lg'
+                }`}
             >
               {category}
             </button>
@@ -135,11 +153,11 @@ export default function Home() {  const [landingPages] = useState<LandingPage[]>
                   </span>
                   <div className={`w-3 h-3 rounded-full ${page.isActive ? 'bg-green-400' : 'bg-gray-400'}`} />
                 </div>
-                
+
                 <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
                   {page.title}
                 </h3>
-                
+
                 <p className="text-slate-600 dark:text-slate-300 mb-6 line-clamp-2">
                   {page.description}
                 </p>
