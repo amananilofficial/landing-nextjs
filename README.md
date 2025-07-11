@@ -54,7 +54,7 @@ Before running this project, make sure you have the following installed:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/amananilofficial/landing-nextjs.git
+   git clone https://github.com/cyberwithaman/landing-nextjs.git
    cd landing-nextjs
    ```
 
@@ -237,4 +237,4 @@ The project includes GitHub Actions workflows for:
 ---
 ## 👨‍💻 Authors
 
-- **Aman Anil** - *Initial work* - [amananilofficial](https://github.com/amananilofficial)
+- **Aman Anil** - *Initial work* - [cyberwithaman](https://github.com/cyberwithaman)
